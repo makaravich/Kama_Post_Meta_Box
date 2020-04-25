@@ -3,10 +3,10 @@
 if( ! class_exists('Kama_Post_Meta_Box') ) :
 
 	/**
-	 * Создает блок произвольных полей для указанных типов записей.
+	 * Creates a block of custom fields for particular post types
 	 *
-	 * Возможные параметры класса, смотрите в: Kama_Post_Meta_Box::__construct()
-	 * Возможные параметры для каждого поля, смотрите в: Kama_Post_Meta_Box::field()
+	 * The parameters of the class see: Kama_Post_Meta_Box::__construct()
+	 * Possible parameters for the fields see: Kama_Post_Meta_Box::field()
 	 *
 	 * При сохранении, очищает каждое поле, через: wp_kses() или sanitize_text_field().
 	 * Функцию очистки можно заменить через хук 'kpmb_save_sanitize_{$id}' и
